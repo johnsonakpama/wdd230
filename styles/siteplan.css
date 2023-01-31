@@ -81,9 +81,24 @@
     color: #617648;
     padding: 1em;
   }
+  nav ul{
+    flex: 1 1 auto;
+  }
+  nav ul{
+    display: block;
+    color: #000;
+    text-align: left;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 0 .9rem;
+  }
   .nav-item:hover{
     color: #fff;
     background-color: #000;
+  }
+  nav ul:hover{
+    color: #fff;
+    background-color: #FAD6A6;
   }
   footer {
     background-color: #3e3e3e;
@@ -95,4 +110,5 @@
   .social {
     display: grid;
     grid-template-columns: repeat(3,100px);
+
   }
