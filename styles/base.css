@@ -1,0 +1,35 @@
+@media only screen and (min-width:35rem){
+    h1, p{
+        margin: 0 2vw;
+    }
+    nav button{
+        margin: 2rem 2vw;
+        background: transparent;
+        border: none;
+        font-size: 2rem;
+        color: bisque;
+    }
+    nav{
+        background-color: beige;
+    }
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    nav ul li a{
+        display: block;
+        padding: .8rem 2vw;
+        text-decoration: none;
+        border-top: 1px solid rgba(0,0,0,0.5);
+        color: #333;
+    }
+    nav ul li .active a{
+        background-color: rgba(0,0,0,0.2);
+        color: #fff;
+    }
+    nav ul li a :hover{
+        background-color: (0,0,0,0.3);
+        color: #fff;
+    }
+}
