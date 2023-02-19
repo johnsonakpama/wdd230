@@ -16,8 +16,8 @@ button.addEventListener("click",() =>{
     
 
         li.appendChild(deleteBtn);
-        list.appendChild(li)
+        list.appendChild(li);
     }
     input.value = "";
-    input.focus(),
+    input.focus();
 });

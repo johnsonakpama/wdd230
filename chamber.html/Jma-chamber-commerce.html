@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson 3</title>
-    <link rel="stylesheet" href="styles/sit-plan.css">
+    <link rel="stylesheet" href="styles/chamber-plan.css">
 </head>
 <body>
 <div id="content">
@@ -20,6 +20,7 @@
             <a href="Directory.html">Directory</a>
             <a href="Join us.html">Join us</a>
             <a href="Contact-page.html">Contact-page</a>
+            <a href="Gallary.html">Gallary</a>
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook.png" alt="fb icon"></a>
             <a href="https://twitter.com" target=_blank>
@@ -37,6 +38,7 @@
                 <li><a href="#">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Contact-page</a></li>
+                <li><a href="#">Gallary</a></li>
             </ul>
         </nav>
         
@@ -57,11 +59,13 @@
 <section class="grid-section page-1">
 <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
 <div id="hero">
-    <div id="hero-box">
-        <img class="hero-img" src="images/wdd230-org.jpg" alt="the picture of two gentle men and a lady">
-</div>
+    <picture id="hero-box">
+        <source srcset="images/400.jpg" media="(min-width:500)and(max-width:799px)">
+        <source srcset="images/600.jpg" media="(min-width:800px)">
+        <img class="hero-img" src="images/800.jpg" alt="the picture of two gentle men and a lady">
+</picture>
 <h2>Thanks Transport</h2>
-<img src="https://www.siapgears.com/storage/app/uploads/public/ece/fd8/e36/thumb__768_426_0_0_auto.jpg" >
+<img src="images/image_truck.jpg" >
 <p>"We get it there for you!"</p>
 <h2>Picture of Food Item</h2>
 <img src="#">
@@ -74,7 +78,7 @@
         <p class>
             The jma chamber of commerce and industry was established for promotion and protection of trade and industry and to represent and express the opinion of the business community on matters affecting trade and industry it is a non-profit making organization and income and property are applied solely for the promotion of it objectives.It is the centeral organization for collecting distribution and dissemenations information of a business nature, especially requlations, tariffs, opportunity for trade and other matter affecting home and oversea markets. In the pursuit of it's objectives, the chamber is committed to no political creed 
         </p>
-        <h2>Product Gallary</h2>
+        <h2>Gallary</h2>
         <img src="#">
         <img src="#">
         <img src="#">
@@ -83,6 +87,8 @@
         <img src="https://live.staticflickr.com/179/377333602_18487605c4_z.jpg">
         <img src="https://www.iyalojadirect.com/wp-content/uploads/2021/02/yam-1024x575.jpg">
     </section>
+    <h3>The Beauty of our Culture</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
 </div>
 <div>
 <h2>Directory</h2>
@@ -95,17 +101,50 @@
 <div>
     <h2>Join</h2>
     <section class="grid-section page-4">
+        <h2>The Benefit for joining</h2>
         <p class>
-            still working on that
+            The local chamber of commerce is a freguently overlooked resource for salespeople, jma chamber of exist to help local business prosper, and for a mordest modest annual fee, we will do everything in power to help sell, it's usually possible to attend chamber events and so on without becoming a member, but the benefits of membership are great that it's well worth the fee to go ahead and sign up.
         </p>
+        <h2>Networking Opportunities</h2>
+        <p>Chamer event are also terrific networking opportunity. The jma chamber of commerce will usually have regularly scheduled "mixer" in which members can meet and greet each other. you can make the most of these opportunities by volunteering to speak at such a mixer, most chamber member are local small business owner who are likely interested in learning more about sales technigues.</p>
+        
     </section>
+     </div>
+            <div class="customer_form">
+                <div id="feedback">
+                    <form action="feedback" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name">
+
+                        <label for="mail">E-mail:</E-mail></label>
+                        <input type="email" id="mail" name="user_mail">
+
+                        <label for="phone">phone#:</label>
+                        <input type="tel" id="phone" name="phone">
+
+                        <label for="msg">massage:</label>
+                        <textarea id="msg" name="user_massage"></textarea>
+
+                        <label for="title">Membership:</title></label>
+
+                        <label>Co-operation</label>
+                        <input type="radio" name="title" value="Co-operation">
+
+                        <label>Individual</label>
+                        <input type="radio" name="title" value="Individual">
+
+                        <label>other</label>
+                        <input type="radio" name="title" value="other">
+                        <button type="submit">submit</button>
+
+                </div>
 </div>
 <div>
     <h2>Contact-page</h2>
-    <sectio class="grid-section page-5">
+    <section class="grid-section page-5">
         <p></p>
 
-    </sectio>
+    </section>
 </main>
 <footer>
     <h2>soko-chamber-commerce</h2>
@@ -115,5 +154,9 @@
     <img src="https://cdn.vectorstock.com/i/preview-1x/95/70/logotype-of-agriculture-logo-with-a-field-vector-20999570.jpg">
     <p>soko-chamber-commerce-site &copy; 2023 Johnson Akpama</p>
 </footer>
+<script>
+    
+</script>
 </body>
 </html>
+<iframe src="https://www.wpmap.org/wp-content/uploads/2015/01/RandWorldOPT.jpg"></iframe>
