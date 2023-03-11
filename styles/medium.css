@@ -63,7 +63,20 @@ form{
     margin-top: 8rem;
     line-height: 2rem;
 }
+.businesses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
+.list-view {
+    display: flex;
+    grid-column: 1/3;
+}
+}
+
+
+
+
 
 
 
