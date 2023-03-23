@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JMA-Chamber-Commerce</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Rock+Salt&display=swap
+    " rel="stylesheet">
 </head>
 <body>
     <header>
@@ -33,6 +39,7 @@
                 <li><a href="Discover.html">Discover</a></li>
                 <li><a href="Join-Us.html">Join-Us</a></li>
                 <li><a href="Directory.html">Directory</a></li>
+                <li><a href="Contact-Us.html">Contact-Us</a></li>
             </ul>
         </nav>
     </div>
@@ -41,7 +48,7 @@
     <main>
         <section class="hero">
             <figure id="hero-box">
-                <img src="images/hero-img.jpg" alt="picture of two gentle men and lady" srcset="images/400.jpg 400w,images/600.jpg 600w,images/800.jpg 800w ">
+                <img src="styles/image/meeting-setting,jpg" alt="meeting-setting" srcset="meeting-setting1.jpg,meeting-setting2.jpg,meeting-setting3.jpg">
             </figure>
         </section>
         <div class="hero-title">
@@ -68,40 +75,18 @@
                 <li>Sed euismod nisi porta lorem mollis aliquam ut porttitor leo. Nec feugiat in fermentum posuere urna nec tincidunt praesent semper.</li>
             </ul>
         </section>
-        <section class="whether">
-            <h2>Whether</h2>
-            <div class="whether-icon">
-                <img src="images/weather-icon.png" alt="Icon showing a sun and a cloud">
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="2">weather summary</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>currently:</td>
-                            <td>sunny</td>
-
-                        </tr>
-                        <tr>
-                            <td>High:</td>
-                            <td><span id="temp">44</span>&deg;f</td>    
-                        </tr>
-                        <tr>
-                            <td>Wind Chill:</td>
-                            <td><span id="windchill"></span>N/A</td>
-                        </tr>
-                        <tr>Humidity:</tr>
-                        <td>82%</td>
-                        <tr>
-                            <td>Wind-Speed:</td>
-                            <td><span id="windspeed">12</span></td>
-                        </tr>
-                    </tbody>
-                </table>
+        <section class="weather">
+            <h3>Weather</h3>
+            <div id="weather-div">
+                <img src="" alt="" id="weather-icon"/>
+                <h4><span class="temperature"></span>&#8451;</h4>
             </div>
+            <p class="weather-type"></p>
+            <p>Wind Speed: <span class="wind-speed"></span> km/h</p>
+            <p>Wind Chill: <span class="wind-chill"></span></p>
         </section>
+                <img src="images/weather-icon.png" alt="Icon showing a sun and a cloud">
+                
         <section class="join">
             <h2>Join</h2>
             <p>Nunc vel risus commodo viverra maecenas accumsan. Mauris pharetra et ultrices neque ornare aenean euismod.</p>
@@ -110,21 +95,21 @@
         <section class="spotlight1">
             <h2>spotlight 1</h2>
             <figure>
-                <img src="images/seating-arrangement-in-a-meeting-for-business.jpg" alt="description" srcset="">
+                <img src="styles/image/palm-tree.jpg.jpg" alt="beach side with palm tree" srcset="styles/image/palm-tree1.jpg,styles/image/palm-tree2.jpg,styles/image/palm-tree3.jpg">
             </figure>
             <p>Ut faucibus pulvinar elementum integer enim neque volutpat ac. Urna duis convallis convallis tellus id interdum. </p>
         </section>
         <section class="spotlight2">
             <h2>spotlight 2</h2>
             <figure>
-                <img src="images/gettyimages-91106932-2048x2048.jpg" alt="description" srcset="">
+                <img src="styles/image/annie-sprat.jpg" alt="description" srcset="styles/image/annie-sprat1.jpg,styles/image/annie-sprat2.jpg,styles/image/annie-sprat3.jpg">
             </figure>
             <p>Eleifend donec pretium vulputate sapien nec sagittis aliquam. At ultrices mi tempus imperdiet.</p>
         </section>
         <section class="spotlight3">
             <h2>spotlight 3</h2>
             <figure>
-                <img src="images/" alt="description" srcset="">
+                <img src="styles/image/Darpan.jpg" alt="description" srcset="styles/image/darpan1.jpg,styles/image/darpan2.jpg,styles/image/darpan3.jpg">
             </figure>
             <p>Purus ut faucibus pulvinar elementum integer enim neque. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor.</p>
         </section>
@@ -145,8 +130,9 @@
         last updated:<span id="Last-modified">Date and time</span>
     </div>
     </footer>
-    <script defer src="script.js"></script>
-    <script defer src="windchill.js"></script>
-    <script defer src="togglemenu.js"></script>
+    <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/weatherapi.js"></script>
+    <script defer src="scripts/togglemenu.js"></script>
+    <script defer src="scripts/spotlight.js"></script>
 </body>
 </html>

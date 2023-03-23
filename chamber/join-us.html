@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JMA-Chamber-Commerce | Join</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Rock+Salt&display=swap
+    " rel="stylesheet">
 </head>
 <body>
     <header>
@@ -31,6 +37,7 @@
                 <li><a href="Discover.html">Discover</a></li>
                 <li><a href="Join-Us.html">Join-Us</a></li>
                 <li><a href="Directory.html">Directory</a></li>
+                <li><a href="Contact-Us.html">Contact-Us</a></li>
             </ul>
         </nav>
     </div>
@@ -38,43 +45,30 @@
     <main>
     <form method="get" action="thankyou.html">
         <h1>Membership Application Form</h1>
-    <fieldset>
-        <form>
-        <legend>Applicant Form</legend>
-                    <label for="name">First Name*</label>
-                    <input type="text" id="name" name="firstname" required>
+        <fieldset>
+            <legend>Applicant Information</legend>
+            <label class="top">First Name*<input type="text" name="Firstname" required></label>
+            <label class="top">Last Name*<input type="text" name="Lastname" required></label>
+            <label class="top"> Position/Title<input type="text" name="position-title" pattern="[a-zA-Z\s\-]{7,}"></label>
+            <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label class="top">Phone*<input type="tel" name="phone" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>Business Information</legend>
+            <label class="top">Business Name*<input type="text" name="business-name" required></label>
+            <div class="membership-level" >Membership Level</div>
+            <label class="sbs"><input type="radio" name="membership-level" value="np"> NP Membershipis for non profit organizations and there is no fee</label>
+            <label class="sbs"><input type="radio" name="membership-level" value="bronze"> Bronze Membership</label>
+            <label class="sbs"><input type="radio" name="membership-level" value="silver"> Silver Membership</label>
+            <label class="sbs"><input type="radio" name="membership-level" value="gold"> Gold Membership</label>
+            
+            <label class="top"> Description<textarea rows="5" class="input" name="business-name"></textarea></label>
+        </fieldset>
+        <!--<p class="last-loaded"><span class="label">Date and Time that the form was loaded: </span><span id="last-loaded"></span></p>-->
+        <input type="hidden" id="last-loaded" name="time-now" value="">
+        <input type="submit" value="Send my application" class="submitBtn">
 
-                    <label for="name">Last Name*</label>
-                    <input type="text" id="name" name="lastname"required>
 
-                    <label for="title">Position/Title</label>
-                    <input type="text" id="name" name="position/title">
-
-                    <label for="mail">E-mail*</E-mail></label>
-                    <input type="email" id="mail" name="user_mail" placeholder="someone@gmail.com">
-
-                    <label for="phone">phone*</label>
-                    <input type="tel" id="phone" name="phone" required>
-    </fieldset>
-        <legend>Business Information</legend>
-        <label for="Business name">Business name*</label>
-        <input type="text" name="business name" required>
-
-        <label class="sbs">NP membership</label> For non profit organization and there is no fees
-        <input type="radio" name="membership level" value="NP membership">
-
-        <label class="sbs">Bronze membership</label>
-        <input type="radio" name="membership level" value="Bronze membership">
-
-        <label class="sbs">Silver membership</label>
-        <input type="radio" name="membership level" value="Silver membership">
-
-        <label class="sbs">Gold membership</label>
-        <input type="radio" name="membership level" value="Gold membership" >
-    </fieldset>
-
-    <p class="last-loaded"><span class="label">Date and Time that the form was loaded: </span><span id="last-loaded"></span></p>
-    <button type="submit">I am intrested</button>      
 
     <div class="membership-benefit">
         <h3>Membership Benefit</h3>
@@ -85,8 +79,7 @@
             <li>Gold Membership: All Silver benefits, plus priority advertising on the home page.</li>
         </ul>
     </div>
-        <label for="msg">Description:</label>
-        <textarea id="msg" name="user_massage"></textarea>
+        <button type="submit">Iam intrested</button>
     </form>
 </main>
 <footer>
@@ -105,7 +98,8 @@
         last updated:<span id="Last-modified">Date and time</span>
     </div>
 </footer>
-<script defer src="join.js"></script>
+<script defer src="scripts/join.js"></script>
+<script defer src="scripts/togglemenu.js"></script>
 </body>
 </html>
     
