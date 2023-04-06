@@ -9,9 +9,12 @@
 		},
 		{
 			"path": "../../../Desktop/EXAMS"
+		},
+		{
+			"path": "../../deck"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "wdd230-1"
+		"liveServer.settings.multiRootWorkspaceName": "deck"
 	}
 }
