@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wk03 Assignment</title>
+    <link href="styles/lazyload.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <div id="hero box">
+                <figure>
+                    <img src="images/Room_setting-small.jpg" width="500" height="250" alt="#">
+                    <img src="images/Room_setting-medium.jpg" width="1000" height="500" alt="#">
+                    <img src="images/Room_setting-large.jpg" width="1500" height="750" alt="#">
+                </figure>
+            </div>
+        </div>
+        <h1>Lazy Load Demonstration</h1>
+    </header>
+    <main>
+        <div class="Nature">
+            <picture>
+                <source srcset="images/Lake_picture-small.jpg" loading="Lazy" media="(max-width: 600px)">
+                <source srcset="images/Lake_picture-medium.jpg" loading="Lazy" media="(max-width: 1000px)">
+                <img src="images/Lake_picture-large.jpg" alt="#" width="500" height="250">
+            </picture>
+            <picture>
+                <source srcset="images/A mountain-small.webp " loading="Lazy" media="(max-width: 600px)">
+                <source srcset="images/A mountain-medium.webp" loading="Lazy" media="(max-width: 1000px)">
+                <img src="images/A mountain-small.webp" alt="A beautiful mountain" width="500" height="250">   
+            </picture>
+            <picture>
+                <source srcset="images/Water_falls-small.jpg" loading="Lazy" media="(max-width: 600px)">
+                <source srcset="images/Water_falls-medium.jpg" loading="Lazy" media="(max-width: 1000px)">
+                <img src="images/Water_falls.jpg" alt="#" width="500" height="250">    
+            </picture>
+            <picture>
+                <source srcset="images/Forest-small.jpg" loading="Lazy" media="(max-width: 600px)">
+                <source srcset="images/Forest-medium.jpg" loading="Lazy" media="(max-width: 1000px)">
+                <img src="images/Forest-large.jpg" alt="#" width="500" height="250">    
+            </picture>
+            <picture>
+                <source srcset="images/Give_nature-small.jpg" loading="Lazy" media="(max-width: 600px)">
+                <source srcset="images/Give_nature-medium.jpg" loading="Lazy" media="(max-width: 1000px)">
+                <img src="images/Give_nature-jpg" alt="#" width="500" height="250">    
+            </picture>
+            <picture>
+                <source srcset="images/Big_tree-small.jpg" loading="Lazy" media="(max-width: 600px)">
+                <source srcset="images/Big_tree-medium.jpg" loading="Lazy" media="(max-width: 1000px)">
+                <img src="images/Big_tree-large.jpg" alt="#" width="500" height="250">
+            </picture>
+        </div>
+    </main>
+    <footer>
+        <p>Wk03 assignment &copy; johnson akpama|BYU-Idaho|WDD 230</p>
+
+        <P id="last-modified">Last-modified:</P>
+    </footer>
+    
+</body>
+</html>
