@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing-form Assignment</title>
+    <link href="styles/form.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <fieldset>
+            <form method="get" action="thanks.html">
+                <h1>Form Activity</h1>
+                <legend>Applicant information</legend>
+                <label class="top">Full Name*<input type="text" id="Full name" name="fullname" required></label>
+                <label class="top">Password*<input type="text" id="password" name="password" required pattern="\s{8}" placeholder="At least eight character, No number"></label>
+                <label class="top">Password*<input type="text" id="password" name="password" required pattern="\s{8}" placeholder="Re-enter your password"></label>
+                <label class="top">Email*><input type="text" id="email" name="email" required placeholder="someone@gmail.com"></label>
+        </fieldset>
+    <label for="r">INPUT: range, min, max, datalist, required</label>
+    <div id="rangevalue">0</div>
+    <input type="range" id="r" name="r" min="0" max="5" value="0" step="1" list="rangevalues">
+    <datalist id="rangevalues">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </datalist>
+    <div class="ref">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">MDN Input: Range</a>
+    </div>
+        <input type="submit" value="Intrested" class="submitBtn">
+    </form>
+    </main>
+    <footer>
+        <p>&copy; WDD230 | johnson akpama-2023</p>
+        
+    </footer>
+    
+</body>
+</html>
