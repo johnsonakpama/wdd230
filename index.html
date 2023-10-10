@@ -2,32 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment portal</title>
-    <link rel="stylesheet" href="styles/siteplan.css">
-</head>
+    <meta name="author" content="Johnson Akpama"/>
+    <meta name="description" content="WDD230-Web Frontend Development,Johnson Akpama,course assignment portal"/>
+    <meta property="fb:app_id" content="https://johnsonakpama.githup.io/wdd230.facebook"/>
+    <title>Hope Chamber of Commerce | Hope page</title>
+   <link href="styles/normalize,css" rel="stylesheet">
+   <link href="styles/base.css" rel="stylesheet">
+   <link href="styles/large.css" rel="stylesheet">
+   <link href='https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono&family=Roboto:ital@1&family=Rock+Salt&display=swap' rel="stylesheet">
+</head>   
 <body>
+    <div id="content">
     <header>
-        <h1>Johnson Akpama</h1>
-        <img src="images/WIN_20210603_135914-Copy.JPG">
+        <h1>Hope Chamber of Commerce</h1>
     </header>
+        <nav>
+            <button id="hamburgerbtn"><span>&#9776;</span><span></span></button>
+            <ul id="primary-nav">
+                <li><a id="toggleMenu">&equiv;</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover">Discover</a></li>
+                <li><a href="directory">Directory</a></li>
+                <li><a href="join">JOIN</a></li>
+              </ul>
+              <img class="logo" src="#" alt="">
+        </nav>
+    </div> 
     <main>
-        
-            <li>week2:title</li>
-            <li>week3:title</li>
-            <li>week4:title</li>
-            <li>week5:title</li>
-            <li>week6:title</li>
-            <li>week7:title</li>
-    </main>
-    <p>Some lesson may need more than one activity/assignment link</p>
-    
+    <h2>Our mission</h2>
+    <p>Home chamber of commerce act as regional economic,<strong> providing world class service</strong> and supporting the development<br>of <strong>vibrant private sector</strong> we promote business through<strong> member service</strong> and provide<strong> balance economic properity</strong></p>
+    <h3>Audience</h3>
+    <p>There will be several targeted audience for this site we will mainly focus on importer and exporter of Agric product<br>and individual and organization who will be intrested in joining us</p>
     </main>
     <footer>
-        <p>Assignment portal &copy; johnson akpama-Nigeria 2023</p>
-        <p>Last updated: 14/01/2023</p>
-
+        <p>&copy;2023 Hope Chamber of Commerce: All Right Reserved</p>
+        <nav a>
+            <p><a href="contactus">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com"target="_blank"></a>
+                <img src="images/facebook.png" alt="fb icon">
+                <a href="https://twitter.com"target=_blank></a>
+                <img src="images/twitter.png" alt="twitter icon"></a>
+                <a href="https://instargm.com"target=_blank></a>
+                <img src="images/instagram.png" alt="instagram icon"></a>
+            </div>  
+        </nav>
+        <P id="last-modified">Last-modified:</P>
     </footer>
-    
+    <script src="scripts/chamber.js"></script>
 </body>
+</html>
