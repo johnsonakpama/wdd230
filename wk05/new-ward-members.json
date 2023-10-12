@@ -1,0 +1,50 @@
+{
+    "membership": "New-member",
+    "familyName": "Paul",
+    "dateMove-In": 1997,
+    "visited-by-bishop": "false",
+    "Individual info":[
+        {
+            "name": "James Paul",
+            "gender": "Male",
+            "birthday":{
+                "day": 3,
+                "month": 12,
+                "year": 2010
+            }
+        },
+        {
+            "name": "Rejoice Paul",
+            "gender": "Female",
+            "birthday":{
+                "day": 10,
+                "month": 4,
+                "year": 2013
+            }
+        
+        },
+        {
+            "name": "Matthew paul",
+            "gender": "Male",
+            "birthday":{
+                "day": 11,
+                "month": 4,
+                "year": 2016
+            }
+        },
+        {
+            "name": "Mosiah Paul",
+            "gender": "Male",
+            "birthday":{
+                "day": 10,
+                "month": 4,
+                "year": 2019
+            }
+        }
+
+        
+
+    ]
+        
+
+}
