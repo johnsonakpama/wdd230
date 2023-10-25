@@ -7,33 +7,67 @@
    <meta name="description" content="WDD230-Web Frontend Development,Johnson Akpama,course assignment portal"/>
    <meta property="fb:app_id" content="https://johnsonakpama.githup.io/wdd230.facebook"/>
    <title>Hope Chamber of Commerce | Discover</title>
+   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
    <link href="styles/normalize,css" rel="stylesheet">
    <link href="styles/base.css" rel="stylesheet">
    <link href="styles/large.css" rel="stylesheet">
    <link href='https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono&family=Roboto:ital@1&family=Rock+Salt&display=swap' rel="stylesheet">
 </head>
 <body>
-    <div id="content">
+    <header id="content">
     <header>
         <h1>Hope Chamber of Commerce</h1>
-    </header>
+    
         <nav>
             <button id="hamburgerbtn"><span>&#9776;</span><span></span></button>
             <ul id="primary-nav">
                 <li><a id="toggleMenu">&equiv;</a></li>
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="discover">Discover</a></li>
-                <li><a href="directory">Directory</a></li>
-                <li><a href="join">JOIN</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">JOIN</a></li>
+                <li><a href="contact-us.html">Contact-Us</a></li>
               </ul>
               <img class="logo" src="#" alt="">
         </nav>
+    </header>
     </div> 
+    <div class="hero-title">
+        <h3>Welcom to</h3>
+        <h2>Hope Chamber of Commerce</h2>
+    </div>
+    <button class="hero-button">Join the Chamber</button>
+    <div class="hero-content">
+        <p>In today business world you can not do all by your self and that is why Hope Chamber of Commerce is here to help your business connect to the world and help exposed you to many opportunities</p>
+    </div>
     <main>
-    <h2>Our mission</h2>
-    <p>Home chamber of commerce act as regional economic,<strong> providing world class service</strong> and supporting the development<br>of <strong>vibrant private sector</strong> we promote business through<strong> member service</strong> and provide<strong> balance economic properity</strong></p>
-    <h3>Audience</h3>
-    <p>There will be several targeted audience for this site we will mainly focus on importer and exporter of Agric product<br>and individual and organization who will be intrested in joining us</p>
+        <main class="Discovery"></main>
+            <h1>Discover more about Us</h1>
+            <div>
+                <h2>Riyon-Rock</h2>
+                <picture>
+                    <img src="images/Riyom-Rock-jpg.jpg" data-src="images/Riyom-Rock-jpg.jpg" alt="Rock build on each other">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisi etiam dignissim diam quis. Odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus. Suspendisse potenti nullam ac tortor vitae purus faucibus. Ac ut consequat semper viverra nam. Lorem sed risus ultricies tristique nulla aliquet. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin. Risus commodo viverra maecenas accumsan lacus. Amet justo donec enim diam vulputate ut pharetra sit. Egestas purus viverra accumsan in nisl nisi scelerisque eu. Massa vitae tortor condimentum lacinia quis vel eros. Et netus et malesuada fames ac turpis egestas sed. Aliquet lectus proin nibh nisl cond Amet porttitor eget dolor morbi non. Eu augue ut lectus arcu bibendum. Tincidunt id aliquet risus feugiat in ante. Volutpat blandit aliquam etiam erat velit scelerisque in. Nisi est sit amet facilisis. Nunc sed blandit libero volutpat sed cras. Sagittis orci a scelerisque purus semper eget duis at tellus. Fusce id velit ut tortor pretium viverra suspendisse potenti nullam. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada. Quam pellentesque nec nam aliquam sem et. Ultrices tincidunt arcu non sodales neque. Neque laoreet suspendisse interdum consectetur libero id faucibus. Eu feugiat pretium nibh ipsum. Odio aenean sed adipiscing diam donec. Faucibus scelerisque eleifend donec pretium vulputate sapien. Nunc vel risus commodo viverra maecenas accumsan lacus vel facilisis. Commodo ullamcorper a lacus vestibulum sed arcu non odio euismod.</p>
+                </picture>
+                <picture>
+                    <img src="images/seating.jpg.jpg" data-src="images/seating.jpg.jpg" alt="Our Conference hall">
+                    <p>Our beautiful Conference Hall where our annualy maeeting due take place were great mine meet to discuss the progress of our members</p>   
+                </picture>
+                <picture>
+                    <img src="images/meeting-setting3.jpg.jpg" data-src="images/meeting-setting3.jpg.jpg" alt="A picture of our annualy meeting hall ">
+                    <p>This is the hall were our annualy meeting take place were different kinds people from all works of life meet to discuss business progress</p>
+                </picture>
+            </div>
+        <h2>📅 Date Math (Days Between Dates)</h2>
+	<p>See the ⚙️<a href="https://codepen.io/blazzard-jason/pen/ExeBjab" target="_blank">Date.now() TimeStamp</a> &nbsp; pen for Date.now() information.</p>
+	<hr>
+	<p><span class="label">Date.now(): </span> <span id="today"></span> &nbsp;<span class="smaller">(milliseconds)</span></p>
+	<p><span class="label">Next Annualy meeting: </span> <span id="christmas"></span> &nbsp; <span class="smaller">(milliseconds)</span></p>
+	<p><span class="label">🎄Anually meeting - Date: </span> <span id="christmasDate"></span></p>
+	<hr>
+	<p><span class="label">Days until Annualy meeting: </span> <span id="daysleft"></span></p>
+
+</main>
     </main>
     <footer>
         <p>&copy;2023 Hope Chamber of Commerce: All Right Reserved</p>
@@ -50,6 +84,9 @@
         </nav>
         <P id="last-modified">Last-modified:</P>
     </footer>
-    <script src="scripts/chamber.js"></script>
+    <script src="scripts/laxyload.js"></script>
+    <script src="scripts/numbervistits.js"></script>
+    <script src="scripts/togglemenu.js"></script>
+    <script src="scripts/annualy.js"></script>
 </body>
 </html>

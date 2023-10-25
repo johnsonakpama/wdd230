@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Johnson Akpama"/>
+    <meta name="description" content="WDD230-Web Frontend Development,Johnson Akpama,course assignment portal"/>
+    <meta property="fb:app_id" content="https://johnsonakpama.githup.io/wdd230.facebook"/>
+    <title>Hope Chamber of Commerce | Home page</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+   <link href="styles/normalize,css" rel="stylesheet">
+   <link href="styles/base.css" rel="stylesheet">
+   <link href="styles/large.css" rel="stylesheet">
+   <link href='https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono&family=Roboto:ital@1&family=Rock+Salt&display=swap' rel="stylesheet">
+</head>
+<body>
+    <div class="neader">
+        <div id="date" class="date">Date</div>
+        <h3 id="massage">Come join the chamber and meet great people Tuesday at 8:00pm</h3>
+        <nav>
+            <button id="hamburgerbtn"><span>&#9776;</span><span></span></button>
+            <ul id="primary-nav">
+                <li><a id="toggleMenu">&equiv;</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact-us.html">Contact-Us</a></li>
+            </ul>
+        </nav>
+        <img class="logo" src="#" alt="#">
+    </div>
+    <main>
+        <form method="get" action="thankyou.html">
+            <h1>Contact-Us</h1>
+            <fieldset>
+                <legend>Send us a message!</legend>
+                <label class="top">First Name*<input type="text" name="Firstname" required></label>
+                <label class="top">Last Name*<input type="text" name="Lastname" required></label>
+                <label class="top">Email*<input type="email" name="Email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Phone*<input type="tel" name="Phone" required></label>
+                <label class="top">Message<textarea rows="5" class="input" name="business-name"></textarea></label>
+            </fieldset>
+        
+        <button type="submit">send us massage</button>
+    </form>
+    <div class="Visit-Us">
+        <h3>Visit-Us</h3>
+        <p><span>&#10147;</span>hope Chamber of Commerce-site | Plateau | Nigerian | 18930-222</p>
+        <p><span>&#9743;</span>(+234)802-987-744</p>
+        <p><span>&#9993;</span>contact@jmachamber.com</p>
+        </div>
+        <footer>
+            <img src="https://cdn.vectorstock.com/i/preview-1x/95/70/logotype-of-agriculture-logo-with-a-field-vector-20999570.jpg" alt="description">
+            <iframe class="map" src="https://www.wpmap.org/wp-content/uploads/2015/01/RandWorldOPT.jpg"></iframe>
+            <div class="base-footer">
+                <div id="signature">&copy;<span id="current-year"></span>JMA-Chamber-commerce|Johnson Akpama|WDD 230 project</div>
+            </div>
+        </footer>
+        <script defer src="scripts/togglemenu.js"></script>
+    </main>
+</body>
+
+    </main>
+</body>
+</html>

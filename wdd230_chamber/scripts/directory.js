@@ -1,3 +1,4 @@
+
 // define source and view-switch boolean
 const source = 'https://johnsonakpama.github.io/wdd230/chamber/json/data.json';
 let listDisplay = false;
@@ -58,12 +59,16 @@ const displayGrid = (members) => {
 // add event listeners
 const gridButton = document.querySelector("#grid-button");
 const listButton = document.querySelector("#list-button");
-const display = document.querySelector(".businesses");
+const display = document.querySelector("article");
 
-gridButton.addEventListener("click", () => {
-	display.classList.remove("list-view");
+gridButton.addEventListener("click",() => {
+    display.classList.add("grid");
+    display.classList.remove("list");
 });
 
-listButton.addEventListener("click", () => {
-	display.classList.add("list-view");
-});
+listButton.addEventListener("click",showList);
+
+function showList(){
+    display.classList.add("list");
+    display.classList.remove("grid");
+}
